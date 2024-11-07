@@ -27,8 +27,8 @@ class UrTube:
                 self.current_user = user
             elif nickname == user.nickname and password != user.password:
                 print('Не верный пароль')
-            else:
-                print('Такого пользователя не существует')
+        else:
+            print('Такого пользователя не существует')
 
     def register(self, nickname, password, age):
         password = hash(password)
